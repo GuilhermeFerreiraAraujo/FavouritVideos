@@ -1,0 +1,9 @@
+<template>
+  <require from="components/video-card/video-card"></require>
+
+  <div class="row text-center">
+    <div repeat.for="song of songs" class="col-md-3">
+      <video-card song.bind="song"></video-card>
+    </div>
+  </div>
+</template>
